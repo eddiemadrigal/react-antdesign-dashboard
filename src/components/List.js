@@ -1,4 +1,5 @@
 import React from 'react';
+import { Row, Col } from 'antd';
 import PostCard from './PostCard'
 
 const List = ({ title, posts }) => {
@@ -14,8 +15,9 @@ const styles={
   container: {
     backgroundColor: '#ccc',
     borderRadius: 5,
-    width: 300,
-    padding: 10
+    width: '90%',
+    padding: 10,
+    margin: '0 auto'
   }
 }
 

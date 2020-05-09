@@ -51,12 +51,17 @@ const App = props => {
             <Breadcrumb style={{ margin: '16px 0' }}>
               <Breadcrumb.Item>Dashboard</Breadcrumb.Item>
             </Breadcrumb>
-            <div style={{ background: '#fff', padding: 24, minHeight: 580, display: 'flex', justifyContent: 'space-around' }}>
+            <Row style={{ background: '#fff', padding: 24, minHeight: 580, display: 'flex', justifyContent: 'space-around' }}>
               { lists.map(list => 
-                <List title={ list.title }
-                      posts={list.posts} 
-                />) }
-            </div>
+                
+                  <Col xs={24} md={12} lg={8}>
+                    <List title={ list.title }
+                        posts={list.posts} 
+                    />
+                  </Col>
+                ) 
+              }
+            </Row>
           </Content>
         </Col>
       </Row>

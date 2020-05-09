@@ -3,10 +3,10 @@ import { Card, Typography } from 'antd';
 
 const { Title } = Typography;
 
-const PostCard = () => {
+const PostCard = ({text}) => {
   return (
     <Card>
-      <Title level={2}>Post</Title>
+      <Title level={2}>{text}</Title>
     </Card>
   )
 }

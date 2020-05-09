@@ -1,11 +1,11 @@
 import React from 'react';
 import PostCard from './PostCard'
 
-const List = props => {
+const List = ({ title, posts }) => {
   return (
     <div style={styles.container}>
-      <h2>{props.title}</h2>
-      <PostCard />
+      <h2>{title}</h2>
+      { posts.map(post => <PostCard text={post.text} />)}
     </div>
   )
 }

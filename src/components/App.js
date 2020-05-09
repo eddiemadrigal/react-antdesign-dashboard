@@ -3,12 +3,17 @@ import { Typography, Layout, Avatar, Menu, Breadcrumb, Row, Col } from 'antd';
 import { UserOutlined } from '@ant-design/icons';
 import SubMenu from 'antd/lib/menu/SubMenu';
 import List from './List';
+import { connect } from 'react-redux';
 import './App.css';
 
 const { Content } = Layout;
 const { Title } = Typography;
 
-function App() {
+const App = props => {
+
+  console.log('App.js: ', props);
+
+  const { lists } = props
 
   return (
     <div className="App">
@@ -47,7 +52,7 @@ function App() {
               <Breadcrumb.Item>Dashboard</Breadcrumb.Item>
             </Breadcrumb>
             <div style={{ background: '#fff', padding: 24, minHeight: 580 }}>
-              <List title='Title Here' />
+              { lists.map(list => <List title={ list.title } posts={list.posts} />) }
             </div>
           </Content>
         </Col>
@@ -68,4 +73,8 @@ function App() {
 
 }
 
-export default App;
+const mapStateToProps = state => ({
+  lists: state.lists
+});
+
+export default connect(mapStateToProps)(App);

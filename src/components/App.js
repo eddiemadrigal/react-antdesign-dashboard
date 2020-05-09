@@ -52,7 +52,10 @@ const App = props => {
               <Breadcrumb.Item>Dashboard</Breadcrumb.Item>
             </Breadcrumb>
             <div style={{ background: '#fff', padding: 24, minHeight: 580 }}>
-              { lists.map(list => <List title={ list.title } posts={list.posts} />) }
+              { lists.map(list => 
+                <List title={ list.title }
+                      posts={list.posts} 
+                />) }
             </div>
           </Content>
         </Col>
@@ -64,7 +67,7 @@ const App = props => {
             , color: '#fff'
             , padding: 16
             , textAlign: 'center' }}>
-              React Ant Design. Created by Eddie Madrigal
+              React Ant Design. Developed by Eddie Madrigal.
           </p>
         </Col>
       </Row>

@@ -1,17 +1,20 @@
 const initialState = [
   {
     id: 0,
-    title: "Draft Events",
+    title: "Drafts",
     posts: [
       {
         id: 0,
-        text: "Happy Mother's Day Deals"
+        title: "Happy Mother's Day Deals",
+        text: "Savings for mom up 50% on all purchases."
       },{
         id: 1,
-        text: "Happy Father's Day Deals"
+        title: "Happy Father's Day Deals",
+        text: "Savings for dad up 50% on all purchases."
       },{
         id: 2,
-        text: "Happy 4th of July Savings"
+        title: "Happy 4th of July Savings",
+        text: "Savings for the family up 50% on all purchases."
       }
     ]
   }

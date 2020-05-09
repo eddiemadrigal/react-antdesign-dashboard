@@ -5,7 +5,7 @@ const List = ({ title, posts }) => {
   return (
     <div style={styles.container}>
       <h2>{title}</h2>
-      { posts.map(post => <PostCard text={post.text} />)}
+      { posts.map(post => <PostCard title={post.title} text={post.text} />)}
     </div>
   )
 }

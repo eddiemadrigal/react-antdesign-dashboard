@@ -2,6 +2,7 @@ import React from 'react';
 import { Typography, Layout, Avatar, Menu, Breadcrumb, Row, Col } from 'antd';
 import { UserOutlined } from '@ant-design/icons';
 import SubMenu from 'antd/lib/menu/SubMenu';
+import List from './List';
 import './App.css';
 
 const { Content } = Layout;
@@ -45,7 +46,9 @@ function App() {
             <Breadcrumb style={{ margin: '16px 0' }}>
               <Breadcrumb.Item>Dashboard</Breadcrumb.Item>
             </Breadcrumb>
-            <div style={{ background: '#fff', padding: 24, minHeight: 580 }}>Content</div>
+            <div style={{ background: '#fff', padding: 24, minHeight: 580 }}>
+              <List title='Title Here' />
+            </div>
           </Content>
         </Col>
       </Row>

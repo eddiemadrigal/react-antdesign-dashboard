@@ -5,13 +5,13 @@ const initialState = [
     posts: [
       {
         id: 0,
-        text: "Happy Mother's Day"
+        text: "Happy Mother's Day Deals"
       },{
         id: 1,
-        text: "Happy Father's Day"
+        text: "Happy Father's Day Deals"
       },{
         id: 2,
-        text: "Happy 4th of Day"
+        text: "Happy 4th of July Savings"
       }
     ]
   }

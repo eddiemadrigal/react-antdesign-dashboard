@@ -5,10 +5,16 @@ const { Title } = Typography;
 
 const PostCard = ({text}) => {
   return (
-    <Card>
+    <Card style={ styles.cardContainer }>
       <Title level={2}>{text}</Title>
     </Card>
   )
+}
+
+const styles = {
+  cardContainer: {
+    marginBottom: 8
+  }
 }
 
 export default PostCard;

@@ -43,7 +43,7 @@ const App = props => {
                 <Menu.Item key='socialmedia1'>Twitter</Menu.Item>
                 <Menu.Item key='socialmedia2'>Instagram</Menu.Item>
               </Menu.ItemGroup>
-            </SubMenu>
+            </SubMenu> 
           </Menu>
         </Col>
         <Col xs={24} sm={18} style={{ backgroundColor: '#ccc'}}>
@@ -51,7 +51,7 @@ const App = props => {
             <Breadcrumb style={{ margin: '16px 0' }}>
               <Breadcrumb.Item>Dashboard</Breadcrumb.Item>
             </Breadcrumb>
-            <div style={{ background: '#fff', padding: 24, minHeight: 580 }}>
+            <div style={{ background: '#fff', padding: 24, minHeight: 580, display: 'flex', justifyContent: 'space-around' }}>
               { lists.map(list => 
                 <List title={ list.title }
                       posts={list.posts} 

@@ -51,10 +51,9 @@ const App = props => {
             <Breadcrumb style={{ margin: '16px 0' }}>
               <Breadcrumb.Item>Dashboard</Breadcrumb.Item>
             </Breadcrumb>
-            <Row style={{ background: '#fff', padding: 24, minHeight: 580, display: 'flex', justifyContent: 'space-around' }}>
-              { lists.map(list => 
-                
-                  <Col xs={24} md={12} lg={8}>
+            <Row style={styles.listsContainer}>
+              { lists.map(list =>                 
+                  <Col key={list.id} xs={24} md={12} lg={8}>
                     <List title={ list.title }
                         posts={list.posts} 
                     />
@@ -79,6 +78,16 @@ const App = props => {
     </div>
   );
 
+}
+
+const styles = {
+  listsContainer: { 
+    background: '#fff'
+  , padding: 24
+  , minHeight: 580
+  , display: 'flex'
+  , justifyContent: 'space-around' 
+  }
 }
 
 const mapStateToProps = state => ({

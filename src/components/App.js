@@ -59,7 +59,7 @@ const App = props => {
                     />
                   </Col>
                 ) 
-              }
+              }              
             </Row>
           </Content>
         </Col>

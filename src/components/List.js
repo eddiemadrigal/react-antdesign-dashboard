@@ -1,11 +1,16 @@
 import React from 'react';
-import PostCard from './PostCard'
+import PostCard from './PostCard';
+import ActionButton from './ActionButton'
 
 const List = ({ title, posts }) => {
   return (
     <div style={styles.container}>
       <h2>{title}</h2>
-      { posts.map(post => <PostCard key={post.id} title={post.title} text={post.text} />)}
+      { posts.map(post => <PostCard 
+          key={post.id} 
+          title={post.title} 
+          text={post.text} />)}
+      <ActionButton />
     </div>
   )
 }
